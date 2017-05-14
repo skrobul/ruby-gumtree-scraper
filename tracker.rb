@@ -8,7 +8,7 @@ class Tracker
 
   def load
     ret = JSON.parse(File.read(TRACK_FILE)) if File.exist?(TRACK_FILE)
-    @processed = ret.fetch('processed')
+    @processed = (ret && ret['processed']) || []
   end
 
   def already_processed?(id)
