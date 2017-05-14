@@ -17,8 +17,8 @@ tracker = Tracker.new
 
 def send_notifications(adverts)
   msg = <<~EOF
-        From: "Gumtree Alert <gumtree@skrobul.com>"
-        To: "Marek <skrobul@skrobul.com>"
+        From: Gumtree Alert <gumtree@skrobul.com>
+        To: Marek <skrobul@skrobul.com>
         Subject: New matches
 
         I have found new matches:
