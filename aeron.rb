@@ -27,7 +27,7 @@ def send_notifications(adverts)
     msg += "\n#{advert[:price]} - #{advert[:title]}"
     msg += "\n#{advert[:location]} - #{advert[:posted]}"
     msg += "\n#{advert[:url]}"
-    msg += "\n==================="
+    msg += "\n===================\n"
   end
 
   res = Net::SMTP.start('localhost', 25) do |smtp|
